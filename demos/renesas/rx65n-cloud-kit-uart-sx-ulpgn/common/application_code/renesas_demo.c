@@ -71,14 +71,14 @@
     "}"
 
 /* Maximum amount of time a Shadow function call may block. */
-#define renesasDemoTIMEOUT                    pdMS_TO_TICKS( 30000UL )
-
+//#define renesasDemoTIMEOUT                    pdMS_TO_TICKS( 30000UL )
+#define renesasDemoTIMEOUT                    pdMS_TO_TICKS( 300UL )
 /* Max size for the name of tasks generated for Shadow. */
 #define renesasDemoCHAR_TASK_NAME_MAX_SIZE    15
 
 /* How often the "desired" state of the bulb should be changed. */
-#define renesasDemoSEND_UPDATE_MS             pdMS_TO_TICKS( ( 500UL ) )
-
+//#define renesasDemoSEND_UPDATE_MS             pdMS_TO_TICKS( ( 500UL ) )
+#define renesasDemoSEND_UPDATE_MS             pdMS_TO_TICKS( ( 5UL ) )
 /* Maximum size of update JSON documents. */
 #define renesasDemoBUFFER_LENGTH              512
 
@@ -89,13 +89,16 @@
 #define renesasDemoMAX_TOKENS                 40
 
 /* Queue configuration parameters. */
-#define renesasDemoSEND_QUEUE_WAIT_TICKS      3000
-#define renesasDemoRECV_QUEUE_WAIT_TICKS      500
+//#define renesasDemoSEND_QUEUE_WAIT_TICKS      3000
+#define renesasDemoSEND_QUEUE_WAIT_TICKS      30
+//#define renesasDemoRECV_QUEUE_WAIT_TICKS      500
+#define renesasDemoRECV_QUEUE_WAIT_TICKS      5
 #define renesasDemoUPDATE_QUEUE_LENGTH        democonfigSHADOW_DEMO_NUM_TASKS * 2
 
 /* The maximum amount of time tasks will wait for their updates to process.
  * Tasks should not continue executing until their updates have processed.*/
-#define renesasDemoNOTIFY_WAIT_MS             pdMS_TO_TICKS( ( 100000UL ) )
+//#define renesasDemoNOTIFY_WAIT_MS             pdMS_TO_TICKS( ( 100000UL ) )
+#define renesasDemoNOTIFY_WAIT_MS             pdMS_TO_TICKS( ( 100UL ) )
 
 extern const rx_provisioning_info *rx_provisioning_data;
 
