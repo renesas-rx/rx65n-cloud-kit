@@ -95,7 +95,7 @@ Configuration Options
 #define SCI_CFG_CH7_INCLUDED    (0)
 #define SCI_CFG_CH8_INCLUDED    (0)
 #define SCI_CFG_CH9_INCLUDED    (0)
-#define SCI_CFG_CH10_INCLUDED   (0)
+#define SCI_CFG_CH10_INCLUDED   (1)
 #define SCI_CFG_CH11_INCLUDED   (0)
 #define SCI_CFG_CH12_INCLUDED   (0)
 

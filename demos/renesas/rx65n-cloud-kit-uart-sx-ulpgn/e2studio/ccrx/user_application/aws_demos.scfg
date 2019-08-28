@@ -221,8 +221,8 @@
 <Item current="true" id="uckdivider.selectBox"/>
 </tool>
 <tool id="Pins" version="1.0.0.0">
-<pinItem allocation="" comments="" direction="None" id="TXD10" locked="false" status="0"/>
-<pinItem allocation="" comments="" direction="None" id="RXD10" locked="false" status="0"/>
+<pinItem allocation="45" comments="" direction="None" id="TXD10" locked="false" status="0"/>
+<pinItem allocation="46" comments="" direction="None" id="RXD10" locked="false" status="0"/>
 <pinItem allocation="66" comments="" direction="None" id="TXD5" locked="false" status="0"/>
 <pinItem allocation="67" comments="" direction="None" id="RXD5" locked="false" status="0"/>
 <pinItem allocation="25" comments="" direction="None" id="CTS0#" locked="false" status="0"/>
@@ -455,8 +455,11 @@
 <Item id="PERIA_INTA254" priority="15"/>
 <Item id="PERIA_INTA255" priority="15"/>
 </tool>
+<tool id="Summary" version="1.0.0.0">
+<option id="com.renesas.smc.code.type" value="Normal Folder"/>
+</tool>
 <tool id="SWComponent" version="1.0.0.0">
-<configuration id="9e950927-22d8-47cb-885c-901fd105175f" inuse="true" name="FreeRTOS_Object">
+<configuration id="810f2aaf-67ee-49ff-84f4-2df6ceb93a50" inuse="true" name="FreeRTOS_Object">
 <allocatable id="OBJECT" name="OBJECT">
 <allocatable id="TASK" name="TASK">
 <option defaultValue="0" id="LinkNum" value=""/>
@@ -486,7 +489,7 @@
 </allocator>
 <source description="Code generator for Real-time OS" display="RTOS Configurator" id="com.renesas.smc.tools.swcomponent.rtosconfigurator.source"/>
 </configuration>
-<configuration id="6a351c2a-3680-4168-99bd-59044c408b6c" inuse="true" name="FreeRTOS_Kernel">
+<configuration id="12a932ca-f3d7-4148-b256-01d63b7ec804" inuse="true" name="FreeRTOS_Kernel">
 <component description="This component is a part of RTOS Configurator feature that allow user to use the GUI to configure kernel setting of AFR" detailDescription="" display="FreeRTOS_kernel" id="com.renesas.smc.tools.swcomponent.rtosconfigurator.freertos.amazon.kernel" version="1.0.0">
 <gridItem id="configENABLE_BACKWARD_COMPATIBILITY" selectedIndex="1"/>
 <gridItem id="configUSE_PREEMPTION" selectedIndex="1"/>
@@ -593,7 +596,7 @@
 </allocator>
 <source description="Code generator for Real-time OS" display="RTOS Configurator" id="com.renesas.smc.tools.swcomponent.rtosconfigurator.source"/>
 </configuration>
-<configuration id="0ecb0e8f-613c-49e6-aebe-f14e1e09e7a9" inuse="true" name="AWS_device_shadow">
+<configuration id="0967b394-6715-4661-b0ab-edc62e3f8d04" inuse="true" name="AWS_device_shadow">
 <component description="This component is a part of RTOS Configurator feature that allow user to use the GUI to configure kernel setting of AFR" detailDescription="" display="AWS_device_shadow" id="com.renesas.smc.tools.swcomponent.rtosconfigurator.freertos.amazon.device_shadow" version="1.0.0">
 <gridItem id="shadowConfigJSON_JSMN_TOKENS" selectedIndex="64"/>
 <gridItem id="shadowConfigJSON_CLIENT_TOKEN" selectedIndex="&quot;clientToken&quot;"/>
@@ -604,7 +607,7 @@
 </allocator>
 <source description="Code generator for Real-time OS" display="RTOS Configurator" id="com.renesas.smc.tools.swcomponent.rtosconfigurator.source"/>
 </configuration>
-<configuration id="6af789f0-7451-4e5c-b397-131ed364b383" inuse="true" name="AWS_tcp_ip">
+<configuration id="1f388a07-56b9-47f4-9fb3-e424472c3f3d" inuse="true" name="AWS_tcp_ip">
 <component description="This component is a part of RTOS Configurator feature that allow user to use the GUI to configure kernel setting of AFR" detailDescription="" display="AWS_tcp_ip" id="com.renesas.smc.tools.swcomponent.rtosconfigurator.freertos.amazon.tcp_ip" version="1.0.0">
 <gridItem id="ipconfigHAS_DEBUG_PRINTF" selectedIndex="0"/>
 <gridItem id="ipconfigHAS_PRINTF" selectedIndex="1"/>
@@ -661,7 +664,7 @@
 </allocator>
 <source description="Code generator for Real-time OS" display="RTOS Configurator" id="com.renesas.smc.tools.swcomponent.rtosconfigurator.source"/>
 </configuration>
-<configuration id="14a1650c-c8ba-4830-9e28-610d2cb120f6" inuse="true" name="AWS_mqtt">
+<configuration id="97b44216-1478-447d-8d87-05c70c0474cf" inuse="true" name="AWS_mqtt">
 <component description="This component is a part of RTOS Configurator feature that allow user to use the GUI to configure kernel setting of AFR" detailDescription="" display="AWS_mqtt" id="com.renesas.smc.tools.swcomponent.rtosconfigurator.freertos.amazon.mqtt" version="1.0.0">
 <gridItem id="mqttconfigENABLE_METRICS" selectedIndex="1"/>
 <gridItem id="mqttOPERATION_TIMEOUT_MS" selectedIndex="120000"/>
@@ -685,7 +688,7 @@
 </allocator>
 <source description="Code generator for Real-time OS" display="RTOS Configurator" id="com.renesas.smc.tools.swcomponent.rtosconfigurator.source"/>
 </configuration>
-<configuration id="ed0f5407-eb16-4810-98a8-e6d5f8a31fb8" inuse="true" name="AWS_secure_socket">
+<configuration id="7de217fa-413d-4a1d-b1ca-629b61b0dd29" inuse="true" name="AWS_secure_socket">
 <component description="This component is a part of RTOS Configurator feature that allow user to use the GUI to configure kernel setting of AFR" detailDescription="" display="AWS_secure_socket" id="com.renesas.smc.tools.swcomponent.rtosconfigurator.freertos.amazon.secure_socket" version="1.0.0">
 <gridItem id="socketsconfigBYTE_ORDER" selectedIndex="0"/>
 <gridItem id="socketsconfigDEFAULT_SEND_TIMEOUT" selectedIndex="10000"/>
@@ -696,7 +699,7 @@
 </allocator>
 <source description="Code generator for Real-time OS" display="RTOS Configurator" id="com.renesas.smc.tools.swcomponent.rtosconfigurator.source"/>
 </configuration>
-<configuration id="abba5f95-bf1c-4ce7-8e9a-0497b128cd2c" inuse="true" name="AWS_ggd">
+<configuration id="459cb0bd-a83a-4cff-91c0-1804480bb9c0" inuse="true" name="AWS_ggd">
 <component description="This component is a part of RTOS Configurator feature that allow user to use the GUI to configure kernel setting of AFR" detailDescription="" display="AWS_ggd" id="com.renesas.smc.tools.swcomponent.rtosconfigurator.freertos.amazon.ggd" version="1.0.0">
 <gridItem id="ggdconfigCORE_NETWORK_INTERFACE" selectedIndex="0"/>
 <gridItem id="ggdconfigJSON_MAX_TOKENS" selectedIndex="128"/>
@@ -868,12 +871,12 @@
 <gridItem id="CTS9#/RTS9#/SS9#" selectedIndex="0"/>
 <gridItem id="SCI9" selectedIndex="0"/>
 <gridItem id="SCK10" selectedIndex="0"/>
-<gridItem id="RXD10/SMISO10/SSCL10" selectedIndex="0"/>
-<gridItem id="TXD10/SMOSI10/SSDA10" selectedIndex="0"/>
+<gridItem id="RXD10/SMISO10/SSCL10" selectedIndex="1"/>
+<gridItem id="TXD10/SMOSI10/SSDA10" selectedIndex="1"/>
 <gridItem id="SS10#" selectedIndex="0"/>
 <gridItem id="CTS10#" selectedIndex="0"/>
 <gridItem id="RTS10#" selectedIndex="0"/>
-<gridItem id="SCI10" selectedIndex="0"/>
+<gridItem id="SCI10" selectedIndex="1"/>
 <gridItem id="SCK11" selectedIndex="0"/>
 <gridItem id="RXD11/SMISO11/SSCL11" selectedIndex="0"/>
 <gridItem id="TXD11/SMOSI11/SSDA11" selectedIndex="0"/>
@@ -901,7 +904,7 @@
 <gridItem id="SCI_CFG_CH7_INCLUDED" selectedIndex="0"/>
 <gridItem id="SCI_CFG_CH8_INCLUDED" selectedIndex="0"/>
 <gridItem id="SCI_CFG_CH9_INCLUDED" selectedIndex="0"/>
-<gridItem id="SCI_CFG_CH10_INCLUDED" selectedIndex="0"/>
+<gridItem id="SCI_CFG_CH10_INCLUDED" selectedIndex="1"/>
 <gridItem id="SCI_CFG_CH11_INCLUDED" selectedIndex="0"/>
 <gridItem id="SCI_CFG_CH12_INCLUDED" selectedIndex="0"/>
 <gridItem id="SCI_CFG_CH0_TX_BUFSIZ" selectedIndex="2048"/>

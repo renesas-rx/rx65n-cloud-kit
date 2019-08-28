@@ -22,7 +22,7 @@
 * Device(s)    : R5F565NEDxFP
 * Tool-Chain   : RXC toolchain
 * Description  : Setting of port and mpc registers
-* Creation Date: 2019-08-23
+* Creation Date: 2019-08-28
 ***********************************************************************************************************************/
 
 /***********************************************************************************************************************
@@ -98,6 +98,27 @@ void R_SCI_PinSet_SCI5()
     /* Set TXD5/SMOSI5 pin */
     MPC.PA4PFS.BYTE = 0x0AU;
     PORTA.PMR.BIT.B4 = 1U;
+
+    R_BSP_RegisterProtectEnable(BSP_REG_PROTECT_MPC);
+}
+
+/***********************************************************************************************************************
+* Function Name: R_SCI_PinSet_SCI10
+* Description  : This function initializes pins for r_sci_rx module
+* Arguments    : none
+* Return Value : none
+***********************************************************************************************************************/
+void R_SCI_PinSet_SCI10()
+{
+    R_BSP_RegisterProtectDisable(BSP_REG_PROTECT_MPC);
+
+    /* Set RXD10/SMISO10/SSCL10 pin */
+    MPC.PC6PFS.BYTE = 0x24U;
+    PORTC.PMR.BIT.B6 = 1U;
+
+    /* Set TXD10/SMOSI10/SSDA10 pin */
+    MPC.PC7PFS.BYTE = 0x24U;
+    PORTC.PMR.BIT.B7 = 1U;
 
     R_BSP_RegisterProtectEnable(BSP_REG_PROTECT_MPC);
 }
